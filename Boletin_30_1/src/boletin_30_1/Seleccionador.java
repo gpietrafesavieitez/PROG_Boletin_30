@@ -1,7 +1,5 @@
 package boletin_30_1;
 
-import java.util.ArrayList;
-
 public class Seleccionador extends SeleccionFutbol{
     
     public Seleccionador(int id, int edad, String nombre, String apellidos){
@@ -13,32 +11,30 @@ public class Seleccionador extends SeleccionFutbol{
     
     @Override
     public void concentrarse(){
-        System.out.println("El seleccionador se concentra.");
+        System.out.println("\t=> El seleccionador se concentra.");
     }
 
     @Override
     public void viajar(){
-        System.out.println("El seleccionador viaja.");
+        System.out.println("\t=> El seleccionador viaja.");
     }
 
     @Override
     public void entrenar(){
-        System.out.println("El seleccionador asiste al entreno.");
+        System.out.println("\t=> El seleccionador asiste al entreno.");
     }
 
     @Override
     public void jugarPartido(){
-        System.out.println("El seleccionador asiste al partido.");
+        System.out.println("\t=> El seleccionador asiste al partido.");
     }
     
-    public void seleccionarJugador(ArrayList<SeleccionFutbol> l){
-        for(SeleccionFutbol sf : l){
-            System.out.println(sf.toString());
-        }
+    public void seleccionarJugador(){
+        System.out.println("\t=> El seleccionador elije un jugador.");
     }
     
     @Override
     public String toString(){
-        return "Seleccionador{id=" + super.id + ", edad=" + super.edad + ", nombre=" + super.nombre + ", apellidos=" + super.apellidos + '}';
+        return "Seleccionador{" + super.toString() + '}';
     }
 }

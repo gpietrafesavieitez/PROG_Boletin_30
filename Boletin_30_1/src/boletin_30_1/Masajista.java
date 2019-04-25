@@ -15,30 +15,30 @@ public class Masajista extends SeleccionFutbol{
 
     @Override
     public void concentrarse(){
-        System.out.println("El masajista se concentra.");
+        System.out.println("\t=> El masajista se concentra.");
     }
 
     @Override
     public void viajar(){
-        System.out.println("El masajista viaja.");
+        System.out.println("\t=> El masajista viaja.");
     }
 
     @Override
     public void entrenar(){
-        System.out.println("El masajista asiste al entreno.");
+        System.out.println("\t=> El masajista asiste al entreno.");
     }
 
     @Override
     public void jugarPartido(){
-        System.out.println("El masajista asiste al partido.");
+        System.out.println("\t=> El masajista asiste al partido.");
     }
     
     public void darMasaje(){
-        System.out.println("El masajista realiza un masaje.");
+        System.out.println("\t=> El masajista realiza un masaje.");
     }
 
     @Override
     public String toString(){
-        return "Masajista{id=" + super.id + ", edad=" + super.edad + ", nombre=" + super.nombre + ", apellidos=" + super.apellidos + ", aniosExperencia=" + aniosExperencia + ", titulacion=" + titulacion + '}';
+        return "Masajista{" + super.toString() + ", aniosExperencia=" + aniosExperencia + ", titulacion=" + titulacion + '}';
     }
 }

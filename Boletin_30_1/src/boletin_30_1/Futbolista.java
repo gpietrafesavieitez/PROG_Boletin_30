@@ -15,30 +15,30 @@ public class Futbolista extends SeleccionFutbol{
     
     @Override
     public void concentrarse(){
-        System.out.println("El futbolista se concentra.");
+        System.out.println("\t=> El futbolista se concentra.");
     }
 
     @Override
     public void viajar(){
-        System.out.println("El futbolista viaja.");
+        System.out.println("\t=> El futbolista viaja.");
     }
 
     @Override
     public void entrenar(){
-        System.out.println("El futbolista asiste al entreno.");
+        System.out.println("\t=> El futbolista asiste al entreno.");
     }
 
     @Override
     public void jugarPartido(){
-        System.out.println("El futbolista asiste al partido.");
+        System.out.println("\t=> El futbolista asiste al partido.");
     }
     
     public void entrevista(){
-        System.out.println("El futbolista realiza una entrevista.");
+        System.out.println("\t=> El futbolista realiza una entrevista.");
     }
 
     @Override
     public String toString(){
-        return "Futbolista{id=" + super.id + ", edad=" + super.edad + ", nombre=" + super.nombre + ", apellidos=" + super.apellidos + ", dorsal=" + dorsal + ", demarcacion=" + demarcacion + '}';
+        return "Futbolista{" + super.toString() + ", dorsal=" + dorsal + ", demarcacion=" + demarcacion + '}';
     }
 }
